@@ -25,6 +25,7 @@ public class AutoSmoothMovement : MonoBehaviour
         _transform = GetComponent<Transform>();
         basePosition = new Vector2(_transform.position.x, _transform.position.y);
         StartCoroutine(Loop());
+        
 
         IEnumerator Loop()
         {

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DeathRespawn : MonoBehaviour
 {
-    [SerializeField] Vector3 respawnPosition;
+    [SerializeField] public Vector3 respawnPosition;
     [SerializeField] int respawnTime = 100;
     [SerializeField] public Vector2 boxSize;
     [SerializeField] public float castDistance;

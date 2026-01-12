@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject player;
+    private Vector3 respawnPos;
+    
     void Start()
     {
-        
+        respawnPos = GetComponent<Transform>().position;
     }
 
-    // Update is called once per frame
-    void Update()
+    void onTriggerEnter2D(Collision collision)
     {
-        
+        Debug.Log("BOOO");
+        if (player.GetComponent<DeathRespawn>().respawnPosition != respawnPos)
+        {
+            player.GetComponent<DeathRespawn>().respawnPosition =respawnPos;
+            //play animation
+        }
     }
 }
