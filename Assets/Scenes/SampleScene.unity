@@ -966,6 +966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746771170}
+  - component: {fileID: 746771171}
   m_Layer: 0
   m_Name: TargetA
   m_TagString: Untagged
@@ -982,12 +983,26 @@ Transform:
   m_GameObject: {fileID: 746771169}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.88, y: 6.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1516842003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746771171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746771169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adcb53b15e042224b91a4e268643344a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DrawDebugGizmo
+  boxSize: {x: 0.5, y: 0.5}
+  color: {r: 0.8349056, g: 1, b: 0.9949967, a: 0}
 --- !u!1 &908004218
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 908004219}
+  - component: {fileID: 908004220}
   m_Layer: 0
   m_Name: TargetB
   m_TagString: Untagged
@@ -1013,12 +1029,26 @@ Transform:
   m_GameObject: {fileID: 908004218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 5.71, z: 0}
+  m_LocalPosition: {x: 5.47, y: 3.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1516842003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &908004220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908004218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adcb53b15e042224b91a4e268643344a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DrawDebugGizmo
+  boxSize: {x: 2, y: 2}
+  color: {r: 1, g: 0.67247874, b: 0.4292453, a: 0}
 --- !u!1 &1036991704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,8 +1158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   targetA: {fileID: 746771170}
   targetB: {fileID: 908004219}
-  speed: 1
-  waitTime: 0.5
+  speed: 5
+  waitTime: 0
 --- !u!111 &1036991708
 Animation:
   m_ObjectHideFlags: 0

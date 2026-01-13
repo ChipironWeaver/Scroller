@@ -5,10 +5,8 @@ public class MovingTargetValues : MonoBehaviour
     [SerializeField] Transform targetB;
     [SerializeField] float speed;
     [SerializeField] float waitTime;
-    float _currentTime;
     private Animation _animation;
     AnimationClip _clip;
-    
 
     private void Start()
     {
@@ -19,28 +17,30 @@ public class MovingTargetValues : MonoBehaviour
         
         AnimationCurve curveX = new  AnimationCurve();
         
-        curveX.AddKey(_currentTime,targetA.position.x); //move to target A
+        /*.AddKey(_currentTime,targetA.position.x); //move to target A
         _currentTime += speed; //move time
         curveX.AddKey(_currentTime,targetA.position.x); //target A
         _currentTime += waitTime; //wait time
         curveX.AddKey(_currentTime,targetB.position.x); //move to target B
         _currentTime += speed; //move time
-        curveX.AddKey(_currentTime,targetB.position.x); //target B
+        curveX.AddKey(_currentTime,targetB.position.x); //target B*/
+            
+        curveX = AnimationCurve.EaseInOut(waitTime, targetA.localPosition.x, speed+waitTime, targetB.localPosition.x);
 
-        _currentTime = 0f;
         
         AnimationCurve curveY = new  AnimationCurve();
-        curveY.AddKey(_currentTime,targetA.position.y); //move to target A
+        
+        /*curveY.AddKey(_currentTime,targetA.position.y); //move to target A
         _currentTime += speed; //move time
         curveY.AddKey(_currentTime,targetA.position.y); //target A
         _currentTime += waitTime; //wait time
         curveY.AddKey(_currentTime,targetB.position.y); //move to target B
         _currentTime += speed; //move time
-        curveY.AddKey(_currentTime,targetB.position.y); //target B
+        curveY.AddKey(_currentTime,targetB.position.y); //target B*/
+        curveY = AnimationCurve.EaseInOut(waitTime, targetA.localPosition.y, speed+waitTime, targetB.localPosition.y);
         
         _clip.SetCurve("", typeof(Transform), "localPosition.x", curveX);
         _clip.SetCurve("", typeof(Transform), "localPosition.y", curveY);
-        
         
         _clip.wrapMode = WrapMode.PingPong;
         _animation.AddClip(_clip, "PlatformAnimation");
