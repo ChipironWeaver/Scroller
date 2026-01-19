@@ -18,7 +18,7 @@ public class CheckPoint : MonoBehaviour
         {
             if (player.GetComponent<DeathRespawn>().respawnPosition != respawnPos)
             {
-                player.GetComponent<DeathRespawn>().respawnPosition = respawnPos;
+                player.GetComponent<DeathRespawn>().respawnPosition = new Vector3(respawnPos.x, respawnPos.y, 0);
                 //play animation
             }
         }

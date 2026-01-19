@@ -10,7 +10,6 @@ public class DinamicBackgroundColor : MonoBehaviour
     void Update()
     {
         transitionCurrentTime = Mathf.PingPong(Time.unscaledTime,transitionTime);
-        //currentColor = colorTransition(firstColor, secondColor,transitionCurrentTime,transitionTime);
         currentColor = Color.Lerp(firstColor, secondColor, transitionCurrentTime/transitionTime);
         Camera.main.backgroundColor = currentColor;
       
