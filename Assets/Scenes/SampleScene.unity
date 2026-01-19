@@ -1159,7 +1159,8 @@ MonoBehaviour:
   targetA: {fileID: 746771170}
   targetB: {fileID: 908004219}
   speed: 5
-  waitTime: 0
+  waitTime: 2
+  easeInOut: 0
 --- !u!111 &1036991708
 Animation:
   m_ObjectHideFlags: 0
