@@ -5,6 +5,7 @@ public class MovingTargetValues : MonoBehaviour
     [SerializeField] Transform targetB;
     [SerializeField] float speed;
     [SerializeField] float waitTime;
+    [SerializeField] bool easeInOut = true;
     private Animation _animation;
     AnimationClip _clip;
 
@@ -16,28 +17,17 @@ public class MovingTargetValues : MonoBehaviour
         _clip.legacy = true;
         
         AnimationCurve curveX = new  AnimationCurve();
-        
-        /*.AddKey(_currentTime,targetA.position.x); //move to target A
-        _currentTime += speed; //move time
-        curveX.AddKey(_currentTime,targetA.position.x); //target A
-        _currentTime += waitTime; //wait time
-        curveX.AddKey(_currentTime,targetB.position.x); //move to target B
-        _currentTime += speed; //move time
-        curveX.AddKey(_currentTime,targetB.position.x); //target B*/
-            
-        curveX = AnimationCurve.EaseInOut(waitTime, targetA.localPosition.x, speed+waitTime, targetB.localPosition.x);
-
-        
         AnimationCurve curveY = new  AnimationCurve();
-        
-        /*curveY.AddKey(_currentTime,targetA.position.y); //move to target A
-        _currentTime += speed; //move time
-        curveY.AddKey(_currentTime,targetA.position.y); //target A
-        _currentTime += waitTime; //wait time
-        curveY.AddKey(_currentTime,targetB.position.y); //move to target B
-        _currentTime += speed; //move time
-        curveY.AddKey(_currentTime,targetB.position.y); //target B*/
-        curveY = AnimationCurve.EaseInOut(waitTime, targetA.localPosition.y, speed+waitTime, targetB.localPosition.y);
+        if (easeInOut)
+        {
+            curveX = AnimationCurve.EaseInOut(waitTime, targetA.localPosition.x, speed+waitTime, targetB.localPosition.x);
+            curveY = AnimationCurve.EaseInOut(waitTime, targetA.localPosition.y, speed+waitTime, targetB.localPosition.y);
+        }
+        else
+        {
+            curveX = AnimationCurve.Linear(waitTime, targetA.localPosition.x, speed+waitTime, targetB.localPosition.x);
+            curveY = AnimationCurve.Linear(waitTime, targetA.localPosition.y, speed+waitTime, targetB.localPosition.y);
+        }
         
         _clip.SetCurve("", typeof(Transform), "localPosition.x", curveX);
         _clip.SetCurve("", typeof(Transform), "localPosition.y", curveY);
