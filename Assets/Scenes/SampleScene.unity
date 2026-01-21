@@ -806,8 +806,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.22}
-  m_Size: {x: 0.5, y: 0.2}
+  m_Offset: {x: 0.000000018033907, y: -0.09965951}
+  m_Size: {x: 0.50000006, y: 0.44068813}
   m_Direction: 1
 --- !u!1 &737691032
 GameObject:
@@ -1572,9 +1572,23 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1463846989}
+    m_ColliderPaths:
+    - - X: 70400000
+        Y: 0
+      - X: 51200000
+        Y: 0
+      - X: 51200000
+        Y: -6400000
+      - X: 70400000
+        Y: -6400000
   m_CompositePaths:
-    m_Paths: []
+    m_Paths:
+    - - {x: 7.0399704, y: -0.64}
+      - {x: 7.0399704, y: 0}
+      - {x: 5.12, y: -0.000029300001}
+      - {x: 5.1200294, y: -0.64}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -1638,7 +1652,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
