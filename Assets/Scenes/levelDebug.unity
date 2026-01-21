@@ -6100,18 +6100,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6909157762840288403, guid: fdbcddf133adaa042a853565d693d3ba, type: 3}
-      propertyPath: jumpBuffer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6909157762840288403, guid: fdbcddf133adaa042a853565d693d3ba, type: 3}
-      propertyPath: airFriction
-      value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 6909157762840288403, guid: fdbcddf133adaa042a853565d693d3ba, type: 3}
-      propertyPath: maxDoubleJumps
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9021654202272154931, guid: fdbcddf133adaa042a853565d693d3ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.12
