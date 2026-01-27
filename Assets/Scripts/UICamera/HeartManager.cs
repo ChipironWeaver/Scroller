@@ -6,7 +6,6 @@ public class HeartManager : MonoBehaviour
 {
     [SerializeField] [Range(0, 40)] private int maxHealth; //1 visual heart is considered as 2 HP
     [SerializeField] [Range(0, 40)] int health;
-    [SerializeField] [Range(0, 5)] private int tempHealth; //Temp Health is WIP
     [SerializeField] [Range(1, 10)] int heartsPerColumn; //Counts the visual hearts
     [SerializeField] private Vector3 offSet;
     
@@ -17,7 +16,6 @@ public class HeartManager : MonoBehaviour
     //2 = Empty Heart
     //3 = Half Empty Heart
     //4 = Half Full Heart with empty
-    //5 = Temp Heart
     [SerializeField] public GameObject heartPrefab;
     private Image _image;
     private List<GameObject> _hearts = new();
@@ -25,16 +23,20 @@ public class HeartManager : MonoBehaviour
     
     void Update()
     {
-        if (new Vector3(health, maxHealth, tempHealth) != healthMemory)
+        if (health > maxHealth)
         {
-            while (_hearts.Count < (float)maxHealth / 2)
+            health = maxHealth;
+            Debug.Log("Imposible Health Value in: " + gameObject.name);
+        }
+        if (new Vector3(health, maxHealth) != healthMemory)
+        {
+            while (_hearts.Count < (float)maxHealth / 2 )
             {
-                GameObject _temp = CreateHeart(_hearts.Count);
-                _hearts.Add(_temp);
+                _hearts.Add(CreateHeart(_hearts.Count));
             }
             
-            
-            
+            RenderHearts();
+            healthMemory = (new Vector3(health, maxHealth));
         }
     }
 
@@ -46,4 +48,43 @@ public class HeartManager : MonoBehaviour
         heart.name = "Heart " + _position.ToString();
         return heart;
     }
+
+    void RenderHearts()
+    {
+        for (int i = 0; i < _hearts.Count; i ++)
+        {
+            if (i < maxHealth / 2)
+            {
+                _hearts[i].SetActive(true);
+                if (i < health / 2)
+                {
+                    _hearts[i].GetComponent<Image>().sprite = hearts[0];
+                }
+                else if (i < (float)health / 2)
+                {
+                    _hearts[i].GetComponent<Image>().sprite = hearts[3];
+                }
+                else
+                {
+                    _hearts[i].GetComponent<Image>().sprite = hearts[2];
+                }
+            }
+            else if (i < (float)maxHealth / 2)
+            {
+                _hearts[i].SetActive(true);
+                if (i < (float)health / 2)
+                {
+                    _hearts[i].GetComponent<Image>().sprite = hearts[1];
+                }
+                else
+                {
+                    _hearts[i].GetComponent<Image>().sprite = hearts[4];
+                }
+            }
+            else
+            {
+                _hearts[i].SetActive(false);
+            }
+        }
+    } 
 }
