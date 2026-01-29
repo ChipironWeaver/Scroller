@@ -6,7 +6,6 @@ public class SetColorAsBackground : MonoBehaviour
     [SerializeField] private Camera _camera;
     void Update()
     {
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = Color.Lerp(_camera.backgroundColor, Color.white, tintPourcentage);
+        GetComponent<SpriteRenderer>().color = Color.Lerp(_camera.backgroundColor, Color.white, tintPourcentage);
     }
 }

@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: ba2efa79042bd3c4d9f7dcfb07b6759e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1128454116406137032
+    second: UI_BackGround-Sheet_0
+  - first:
+      213: -281944566760727177
+    second: UI_BackGround-Sheet_1
+  - first:
+      213: 393549155136416088
+    second: UI_BackGround-Sheet_2
+  - first:
+      213: 120548192897098655
+    second: UI_BackGround-Sheet_3
+  - first:
+      213: 1031361243279946444
+    second: UI_BackGround-Sheet_4
+  - first:
+      213: -3908991260352162740
+    second: UI_BackGround-Sheet_5
+  - first:
+      213: 8470818396304223601
+    second: UI_BackGround-Sheet_6
+  - first:
+      213: -8659906904739168277
+    second: UI_BackGround-Sheet_7
+  - first:
+      213: -4606778051133531961
+    second: UI_BackGround-Sheet_8
+  - first:
+      213: -5033213460620413695
+    second: UI_BackGround-Sheet_9
+  - first:
+      213: 3318903103258098876
+    second: UI_BackGround-Sheet_10
+  - first:
+      213: -4244273030671548756
+    second: UI_BackGround-Sheet_11
+  - first:
+      213: 8895754922209899502
+    second: UI_BackGround-Sheet_12
+  - first:
+      213: -8596406399117204847
+    second: UI_BackGround-Sheet_13
+  - first:
+      213: 2040033729569422454
+    second: UI_BackGround-Sheet_14
+  - first:
+      213: 7663539457467117406
+    second: UI_BackGround-Sheet_15
+  - first:
+      213: -8635877346561363968
+    second: UI_BackGround-Sheet_16
+  - first:
+      213: -4726748089474042931
+    second: UI_BackGround-Sheet_17
+  - first:
+      213: 7077700144454680210
+    second: UI_BackGround-Sheet_18
+  - first:
+      213: -9037916674404231661
+    second: UI_BackGround-Sheet_19
+  - first:
+      213: 3779556986692719848
+    second: UI_BackGround-Sheet_20
+  - first:
+      213: 5384586740377175397
+    second: UI_BackGround-Sheet_21
+  - first:
+      213: 6420381773788376885
+    second: UI_BackGround-Sheet_22
+  - first:
+      213: 7149930786185893008
+    second: UI_BackGround-Sheet_23
+  - first:
+      213: 6147279561982898178
+    second: UI_BackGround-Sheet_24
+  - first:
+      213: -453864366297544253
+    second: UI_BackGround-Sheet_25
+  - first:
+      213: -1789926026089869587
+    second: UI_BackGround-Sheet_26
+  - first:
+      213: 1490042964656569627
+    second: UI_BackGround-Sheet_27
+  - first:
+      213: 830611778401081712
+    second: UI_BackGround-Sheet_28
+  - first:
+      213: 7774153576090443592
+    second: UI_BackGround-Sheet_29
+  - first:
+      213: -1726296895653369931
+    second: UI_BackGround-Sheet_30
+  - first:
+      213: -5231963340521179240
+    second: UI_BackGround-Sheet_31
+  - first:
+      213: 2610706694985970222
+    second: UI_BackGround-Sheet_32
+  - first:
+      213: -7158939129405482451
+    second: UI_BackGround-Sheet_33
+  - first:
+      213: -5126291457739391140
+    second: UI_BackGround-Sheet_34
+  - first:
+      213: -5646011947734918734
+    second: UI_BackGround-Sheet_35
+  - first:
+      213: 3311390959757352778
+    second: UI_BackGround-Sheet_36
+  - first:
+      213: 1720801249175542973
+    second: UI_BackGround-Sheet_37
+  - first:
+      213: -2904808920594526602
+    second: UI_BackGround-Sheet_38
+  - first:
+      213: -7972282253972292416
+    second: UI_BackGround-Sheet_39
+  - first:
+      213: -1766990272239645411
+    second: UI_BackGround-Sheet_40
+  - first:
+      213: -1214964309026950117
+    second: UI_BackGround-Sheet_41
+  - first:
+      213: -841506089640732788
+    second: UI_BackGround-Sheet_42
+  - first:
+      213: -7047084671825591410
+    second: UI_BackGround-Sheet_43
+  - first:
+      213: -8269395121554216630
+    second: UI_BackGround-Sheet_44
+  - first:
+      213: 1903415140355795926
+    second: UI_BackGround-Sheet_45
+  - first:
+      213: 9000861673872973010
+    second: UI_BackGround-Sheet_46
+  - first:
+      213: -844153008834343320
+    second: UI_BackGround-Sheet_47
+  - first:
+      213: 4008105881469348996
+    second: UI_BackGround-Sheet_48
+  - first:
+      213: -5708343950222561686
+    second: UI_BackGround-Sheet_49
+  - first:
+      213: -4272657650737111341
+    second: UI_BackGround-Sheet_50
+  - first:
+      213: 3277970274713023909
+    second: UI_BackGround-Sheet_51
+  - first:
+      213: -6223401240378099919
+    second: UI_BackGround-Sheet_52
+  - first:
+      213: -3252313030847192698
+    second: UI_BackGround-Sheet_53
+  - first:
+      213: 174638702642508246
+    second: UI_BackGround-Sheet_54
+  - first:
+      213: -5650570956820407533
+    second: UI_BackGround-Sheet_55
+  - first:
+      213: 4198083050189574209
+    second: UI_BackGround-Sheet_56
+  - first:
+      213: 7311676071835045951
+    second: UI_BackGround-Sheet_57
+  - first:
+      213: 6771566922254906548
+    second: UI_BackGround-Sheet_58
+  - first:
+      213: 654986857243677683
+    second: UI_BackGround-Sheet_59
+  - first:
+      213: -8114628634473775353
+    second: UI_BackGround-Sheet_60
+  - first:
+      213: -916316594013479602
+    second: UI_BackGround-Sheet_61
+  - first:
+      213: -854937416320431161
+    second: UI_BackGround-Sheet_62
+  - first:
+      213: -5169371429004883768
+    second: UI_BackGround-Sheet_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fe84eb5fce650f0800000000000000
+      internalID: -1128454116406137032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d10eb09e4561cf0800000000000000
+      internalID: -281944566760727177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859af891fda267500800000000000000
+      internalID: 393549155136416088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9362f751f54ca100800000000000000
+      internalID: 120548192897098655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc27ecc1691205e00800000000000000
+      internalID: 1031361243279946444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c445a90d82970c9c0800000000000000
+      internalID: -3908991260352162740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17dae8c73746e8570800000000000000
+      internalID: 8470818396304223601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befb1136d84d1d780800000000000000
+      internalID: -8659906904739168277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c89e1f25cf6110c0800000000000000
+      internalID: -4606778051133531961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1057101560f662ab0800000000000000
+      internalID: -5033213460620413695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcf3a1c9cc1f0e20800000000000000
+      internalID: 3318903103258098876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae3d0d6a205915c0800000000000000
+      internalID: -4244273030671548756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3f04358f1147b70800000000000000
+      internalID: 8895754922209899502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19269bbfced63b880800000000000000
+      internalID: -8596406399117204847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67cfcc45ed7af4c10800000000000000
+      internalID: 2040033729569422454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BackGround-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f648c888c5a5a60800000000000000
+      internalID: 7663539457467117406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fc2dc02d58a28f34880b257e249c4a06
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      UI_BackGround-Sheet_0: -1128454116406137032
+      UI_BackGround-Sheet_1: -281944566760727177
+      UI_BackGround-Sheet_10: 3318903103258098876
+      UI_BackGround-Sheet_11: -4244273030671548756
+      UI_BackGround-Sheet_12: 8895754922209899502
+      UI_BackGround-Sheet_13: -8596406399117204847
+      UI_BackGround-Sheet_14: 2040033729569422454
+      UI_BackGround-Sheet_15: 7663539457467117406
+      UI_BackGround-Sheet_2: 393549155136416088
+      UI_BackGround-Sheet_3: 120548192897098655
+      UI_BackGround-Sheet_4: 1031361243279946444
+      UI_BackGround-Sheet_5: -3908991260352162740
+      UI_BackGround-Sheet_6: 8470818396304223601
+      UI_BackGround-Sheet_7: -8659906904739168277
+      UI_BackGround-Sheet_8: -4606778051133531961
+      UI_BackGround-Sheet_9: -5033213460620413695
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
