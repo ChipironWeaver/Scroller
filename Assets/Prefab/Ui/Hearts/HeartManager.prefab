@@ -57,9 +57,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1220e16bd6e53ea45824b2656abef61b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  maxHealth: 20
-  health: 14
-  heartsPerColumn: 7
+  maxHealth: 14
+  health: 11
+  heartsPerColumn: 2
   offSet: {x: 60, y: -60, z: 0}
   hearts:
   - {fileID: -6127141702526261921, guid: 8e86878e83506114a903703a815ba763, type: 3}
