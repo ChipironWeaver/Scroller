@@ -27,11 +27,12 @@ public class UIEnterExitAnimation : MonoBehaviour
         {
             while (time < duration)
             {
-                GetComponent<Transform>().localPosition = Vector2.Lerp(startingPosition, target, time / duration ); 
+                GetComponent<Transform>().localPosition = Vector2.Lerp(startingPosition, target, time / duration);
                 time += Time.deltaTime;
                 yield return new WaitForNextFrameUnit();
             }
-            this.enabled = false;
+
+            this.GameObject().SetActive(false);
         }
         else
         {
