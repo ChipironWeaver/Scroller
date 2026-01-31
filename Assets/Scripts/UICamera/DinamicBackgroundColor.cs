@@ -5,7 +5,7 @@ public class DinamicBackgroundColor : MonoBehaviour
 {
     [SerializeField] float transitionTime = 5f;
     [Header("Colors")]
-    [SerializeField] List<Color> color;
+    public List<Color> color;
     private Color currentColor;
     private float transitionCurrentTime = 0f;
     void Update()
