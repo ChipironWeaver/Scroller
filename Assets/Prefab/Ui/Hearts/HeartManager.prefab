@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   maxHealth: 14
   health: 11
-  heartsPerColumn: 2
+  heartsPerColumn: 5
   offSet: {x: 60, y: -60, z: 0}
   hearts:
   - {fileID: -6127141702526261921, guid: 8e86878e83506114a903703a815ba763, type: 3}

@@ -406,8 +406,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DinamicBackgroundColor
   transitionTime: 10
-  firstColor: {r: 1, g: 0.759434, b: 0.940732, a: 1}
-  secondColor: {r: 0.6611541, g: 0.56078434, b: 1, a: 1}
+  color:
+  - {r: 0.9022713, g: 0.6556604, b: 1, a: 0}
+  - {r: 0.65882355, g: 0.7956591, b: 1, a: 0}
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
