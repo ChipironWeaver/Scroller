@@ -15,7 +15,8 @@ public class UIEnterExitAnimation : MonoBehaviour
     [SerializeField] private GameObject _camera;
     
     private Vector2 _target;
-    void OnEnable()
+    
+    public void AnimatedEnter()
     {
         StartCoroutine(SmoothMove(Vector2.zero, new Vector2((float)Screen.height * direction.x * 2, (float)Screen.width * direction.y * 2), speed));
         if (_camera != null)
@@ -23,7 +24,6 @@ public class UIEnterExitAnimation : MonoBehaviour
             _camera.GetComponent<DinamicBackgroundColor>().color = color;
         }
     }
-
     IEnumerator SmoothMove(Vector2 target , Vector2 startingPosition, float duration, bool disable = false)
     {
         
