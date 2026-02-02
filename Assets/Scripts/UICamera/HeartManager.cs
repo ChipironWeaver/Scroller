@@ -28,7 +28,7 @@ public class HeartManager : MonoBehaviour
         if (health > maxHealth)
         {
             health = maxHealth;
-            Debug.Log("Imposible Health Value in: " + gameObject.name);
+            Debug.LogWarning("Imposible Health Value in: " + gameObject.name);
         }
         if (new Vector3(health, maxHealth) != healthMemory)
         {
