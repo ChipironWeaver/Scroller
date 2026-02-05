@@ -59,12 +59,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   maxHealth: 14
   health: 11
-  heartsPerColumn: 5
-  offSet: {x: 60, y: -60, z: 0}
-  hearts:
+  _heartsPerColumn: 5
+  _offSet: {x: 60, y: -60, z: 0}
+  _hearts:
   - {fileID: -6127141702526261921, guid: 8e86878e83506114a903703a815ba763, type: 3}
   - {fileID: -1572042411, guid: 8e86878e83506114a903703a815ba763, type: 3}
   - {fileID: 266743076, guid: 8e86878e83506114a903703a815ba763, type: 3}
   - {fileID: -1686263313, guid: 8e86878e83506114a903703a815ba763, type: 3}
   - {fileID: -1391021141, guid: 8e86878e83506114a903703a815ba763, type: 3}
-  heartPrefab: {fileID: 8675927843738879062, guid: 7a5635af1d56280478a659af1fd5e04d, type: 3}
+  _heartPrefab: {fileID: 8675927843738879062, guid: 7a5635af1d56280478a659af1fd5e04d, type: 3}

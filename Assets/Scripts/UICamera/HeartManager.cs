@@ -1,27 +1,26 @@
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using Image = UnityEngine.UI.Image;
+using System.Collections.Generic;
 
 public class HeartManager : MonoBehaviour
 {
     [Header("Health Settings")]
-    [SerializeField] [Range(0, 40)] private int maxHealth; //1 visual heart is considered as 2 HP
-    [SerializeField] [Range(0, 40)] int health;
+    [Range(0, 40)] public int maxHealth; //1 visual heart is considered as 2 HP
+    [Range(0, 40)] public int health;
     [Header("Render Settings")]
-    [SerializeField] [Range(1, 10)] int heartsPerColumn; //Counts the visual hearts
-    [SerializeField] private Vector3 offSet;
+    [SerializeField] [Range(1, 10)] private int _heartsPerColumn; //Counts the visual hearts
+    [SerializeField] private Vector3 _offSet;
     [Header("Sprite")]
-    [SerializeField] private List<Sprite> hearts;
-    //6 images required in this order:
+    [SerializeField] private List<Sprite> _hearts;
     //0 = Full Heart
     //1 = Half Full Heart
     //2 = Empty Heart
     //3 = Half Empty Heart
     //4 = Half Full Heart with empty
-    [SerializeField] public GameObject heartPrefab;
-    private Image _image;
-    private List<GameObject> _hearts = new();
-    private Vector3 healthMemory;
+    [SerializeField] private GameObject _heartPrefab;
+    private List<GameObject> _heartGameObjects = new();
+    private Vector3 _healthMemory;
     
     void Update()
     {
@@ -30,63 +29,74 @@ public class HeartManager : MonoBehaviour
             health = maxHealth;
             Debug.LogWarning("Imposible Health Value in: " + gameObject.name);
         }
-        if (new Vector3(health, maxHealth) != healthMemory)
+        if (new Vector3(health, maxHealth) != _healthMemory)
         {
-            while (_hearts.Count < (float)maxHealth / 2 )
-            {
-                _hearts.Add(CreateHeart(_hearts.Count));
-            }
-            
             RenderHearts();
-            healthMemory = (new Vector3(health, maxHealth));
+            _healthMemory = (new Vector3(health, maxHealth));
         }
     }
 
-    GameObject CreateHeart( int _position)
+    GameObject CreateHeart(int _position)
     {
-        GameObject heart = Instantiate<GameObject>(heartPrefab);
+        GameObject heart = Instantiate<GameObject>(_heartPrefab);
         heart.transform.SetParent(gameObject.transform,false);
-        heart.GetComponent<RectTransform>().localPosition = new Vector3(offSet.x * (_position % heartsPerColumn + 1),offSet.y*(_position/ heartsPerColumn));
+        heart.GetComponent<RectTransform>().localPosition = new Vector3(_offSet.x * (_position % _heartsPerColumn + 1),_offSet.y*(_position/ _heartsPerColumn));
         heart.name = "Heart " + _position.ToString();
         return heart;
     }
 
     void RenderHearts()
     {
-        for (int i = 0; i < _hearts.Count; i ++)
+        AddHearts();
+        for (int i = 0; i < _heartGameObjects.Count; i ++)
         {
             if (i < maxHealth / 2)
             {
-                _hearts[i].SetActive(true);
+                _heartGameObjects[i].SetActive(true);
                 if (i < health / 2)
                 {
-                    _hearts[i].GetComponent<Image>().sprite = hearts[0];
+                    _heartGameObjects[i].GetComponent<Image>().sprite = _hearts[0];
                 }
                 else if (i < (float)health / 2)
                 {
-                    _hearts[i].GetComponent<Image>().sprite = hearts[3];
+                    _heartGameObjects[i].GetComponent<Image>().sprite = _hearts[3];
                 }
                 else
                 {
-                    _hearts[i].GetComponent<Image>().sprite = hearts[2];
+                    _heartGameObjects[i].GetComponent<Image>().sprite = _hearts[2];
                 }
             }
+            
             else if (i < (float)maxHealth / 2)
             {
-                _hearts[i].SetActive(true);
+                _heartGameObjects[i].SetActive(true);
                 if (i < (float)health / 2)
                 {
-                    _hearts[i].GetComponent<Image>().sprite = hearts[1];
+                    _heartGameObjects[i].GetComponent<Image>().sprite = _hearts[1];
                 }
                 else
                 {
-                    _hearts[i].GetComponent<Image>().sprite = hearts[4];
+                    _heartGameObjects[i].GetComponent<Image>().sprite = _hearts[4];
                 }
             }
             else
             {
-                _hearts[i].SetActive(false);
+                _heartGameObjects[i].SetActive(false);
             }
         }
-    } 
+    }
+
+    private void AddHearts()
+    {
+        while (_heartGameObjects.Count < (float)maxHealth / 2 )
+        {
+            _heartGameObjects.Add(CreateHeart(_heartGameObjects.Count));
+        }
+    }
+
+    public void UpdateHealth(int _health, int _maxHealth)
+    {
+        health = _health;
+        maxHealth = _maxHealth;
+    }
 }
